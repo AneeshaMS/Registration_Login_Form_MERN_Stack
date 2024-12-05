@@ -13,7 +13,7 @@ const Login = () => {
     event.preventDefault();
 
     axios
-      .post("http://localhost:3001/api/login", { email, password })
+      .post("http://13.49.244.225/api/login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data.message === "Success") {

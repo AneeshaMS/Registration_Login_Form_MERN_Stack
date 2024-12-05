@@ -11,7 +11,6 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     axios
       .post(
         "http://ec2-13-49-244-225.eu-north-1.compute.amazonaws.com/api/login",

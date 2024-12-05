@@ -13,7 +13,6 @@ const Register = () => {
   const handleSubmit = (event) => {
     console.log("event: ", event);
     event.preventDefault();
-
     axios
       .post("http://ec2-13-49-244-225.eu-north-1.compute.amazonaws.com/api/register", { name, email, password })
       .then((result) => {

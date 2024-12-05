@@ -13,7 +13,10 @@ const Login = () => {
     event.preventDefault();
 
     axios
-      .post("http://13.49.244.225/api/login", { email, password })
+      .post(
+        "http://ec2-13-49-244-225.eu-north-1.compute.amazonaws.com/api/login",
+        { email, password }
+      )
       .then((result) => {
         console.log(result);
         if (result.data.message === "Success") {
